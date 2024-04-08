@@ -1,0 +1,203 @@
+body {
+  font-family: "Work Sans", serif;
+  background-color: #051321;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+p {
+  padding-left: 0;
+}
+
+h3 {
+  padding-left: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1500px;
+  padding: 0 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__image {
+  padding-top: 60px;
+  padding-bottom: 140px;
+  max-width: 1500px;
+  background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 30, 73, 0.3)),
+    url(./images/hero-desk.jpg);
+  margin: auto;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.hero_div_title {
+  color: #fff;
+  margin: 180px 0;
+  width: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 24px;
+}
+
+.actions ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-li a {
+  font-size: 18px;
+  color: #fff;
+  padding: 16px;
+}
+
+.btn-header {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.burger-menu {
+  width: 35px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.header__elements {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* @media (max-width: 1150px) {
+  .hero__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 30, 73, 0.3)),
+      url(./images/hero-tab.jpg);
+  }
+} */
+
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .container {
+    padding: 0 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .hero__title {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .hero_div_title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .actions {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
