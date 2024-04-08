@@ -182,6 +182,11 @@ li {
   .container {
     padding: 0 65px;
   }
+
+  .hero__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 30, 73, 0.3)),
+      url(./images/hero-mid-1080.jpg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -196,6 +201,11 @@ li {
 
   .hero_div_title {
     width: 100%;
+  }
+
+  .hero__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 30, 73, 0.3)),
+      url(./images/hero-tab.jpg);
   }
 }
 
@@ -278,33 +288,6 @@ li {
   margin: auto;
 }
 
-.cards .container {
-  display: flex;
-  justify-content: center;
-}
-
-.second-title {
-  position: relative;
-  font-weight: 700;
-  font-size: 40px;
-  display: inline-flex;
-  line-height: 120%;
-  text-align: center;
-  color: #505050;
-  display: flex;
-  justify-content: center;
-}
-
-.second-title::before {
-  position: absolute;
-  content: "";
-  width: 80%;
-
-  top: -7px;
-  height: 3px;
-  background-color: rgba(171, 4, 51, 0.8);
-}
-
 @media (max-width: 1250px) {
   .lesson_elms h2 {
     font-size: 32px;
@@ -319,6 +302,18 @@ li {
   .lessons {
     margin: 0 24px;
   }
+
+  .lesson_elms {
+    width: 100%;
+  }
+
+  .lesson_elms h2 {
+    margin-bottom: 20px;
+  }
+
+  .lesson_elms p {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -332,10 +327,112 @@ li {
   .learn-more-btn {
     font-size: 10px;
   }
+  .learn-more-btn {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 480px) {
   .second-title {
     font-size: 30px;
+  }
+}
+
+/* -----------------------------END FIRST SECTION---------------------------- */
+
+/* ----------------------------SECOND SECTION----------------------------- */
+
+.second-title {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-size: 40px;
+  display: inline-flex;
+  line-height: 120%;
+  text-align: center;
+  color: #505050;
+  display: flex;
+  justify-content: center;
+}
+
+.second-title::before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  top: -7px;
+  height: 3px;
+  background-color: rgba(171, 4, 51, 0.8);
+}
+.cards-ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.content-card {
+  padding: 0 24px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+
+  background-color: #fff;
+}
+
+.cards-li {
+  flex-basis: calc((100% - 48px) / 3);
+  border-radius: 20px 20px 10px 10px;
+  position: relative;
+
+  box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.05),
+    0 2px 4px 0 rgba(28, 5, 77, 0.1);
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-image: radial-gradient(
+    138.81% 138.29% at 1.22% 1.08%,
+    rgb(251, 251, 251) 0%,
+    rgb(211, 211, 211) 100%
+  );
+}
+
+.cards-li img {
+  position: relative;
+  top: -15px;
+}
+
+.card-h {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+  .cards-ul {
+    flex-wrap: wrap;
+  }
+  .cards-li {
+    flex-basis: calc((100% - 48px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-ul {
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .second-title::before {
+    width: 160px;
+  }
+
+  .second-title {
+    font-size: 32px;
   }
 }
