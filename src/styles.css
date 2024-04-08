@@ -440,6 +440,10 @@ li {
   color: #505050;
 }
 
+.content-card {
+  border-radius: 0 0 10px 10px;
+}
+
 @media (max-width: 1150px) {
   .cards-ul {
     flex-wrap: wrap;
@@ -477,4 +481,20 @@ li {
   .learn-more-btn:hover {
     transform: scale(1.2);
   }
+}
+
+/* -------------------------------- END SECOND SECTION----------------------- */
+
+/* -----------------------------------THIRD SECTION---------------------------------- */
+
+.cards-second {
+  background-color: #ececec;
+  padding: 88px 0;
+}
+
+.card-img-second {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
 }
