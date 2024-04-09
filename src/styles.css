@@ -535,6 +535,7 @@ li {
 }
 
 .articles-li {
+  border-radius: 10px;
   box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.05),
     0 2px 4px 0 rgba(28, 5, 77, 0.1);
   transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
@@ -588,5 +589,136 @@ li {
   }
   .articles-li:nth-child(-n + 2) {
     flex-basis: 100%;
+  }
+}
+
+/* ---------------------------------------END FOURTH SECTION---------------------------- */
+
+/* ---------------------------------------FOOTER SECTION---------------------------- */
+
+/* ---------------------------------------END FOOTER SECTION---------------------------- */
+
+footer {
+  background-color: #505050;
+  padding: 60px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 48px;
+}
+.footer-li:first-child {
+  font-weight: 700;
+}
+
+.footer-li:first-child::before {
+  content: "";
+  background-color: #fff;
+  height: 3px;
+  top: -10px;
+  width: 58px;
+  position: absolute;
+}
+
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer-li {
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.footer-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.accordion-div {
+  display: none;
+  width: 100%;
+}
+
+.accordion {
+  background-color: #000000;
+  color: #fffafa;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.accordion:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.accordion-second {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.panel {
+  border-bottom: 2px solid #fff;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.panel {
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 20px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.accordion-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-ul .footer-li:first-child::before {
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 768px) {
+  .footer-menu {
+    display: none;
+  }
+  .logotype-social-icons {
+    display: none;
+  }
+  .accordion-div {
+    display: block;
   }
 }

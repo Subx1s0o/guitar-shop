@@ -378,5 +378,102 @@
         </ul>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="footer-menu">
+          <div class="first-element">
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="">My Account</a></li>
+              <li class="footer-li"><a href="">Overview</a></li>
+              <li class="footer-li"><a href="">Order History</a></li>
+              <li class="footer-li"><a href="">Wishlist</a></li>
+              <li class="footer-li"><a href="">Account information</a></li>
+            </ul>
+          </div>
+          <div class="second-element">
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="">Store</a></li>
+              <li class="footer-li"><a href="">Security Notice</a></li>
+              <li class="footer-li"><a href="">Location & Hours</a></li>
+              <li class="footer-li"><a href="">Rentals</a></li>
+              <li class="footer-li"><a href="">Privacy Notice</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logotype-social-icons">
+          <a href="">
+            <svg class="logotype" width="256" height="40">
+              <use href="./src/images/icon.svg#Logotype"></use>
+            </svg>
+          </a>
+          <div class="footer-icons">
+            <a href="">
+              <svg width="30" height="20">
+                <use href="./src/images/icon.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="30" height="20">
+                <use href="./src/images/icon.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="30" height="20">
+                <use href="./src/images/icon.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="30" height="20">
+                <use href="./src/images/icon.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="accordion-div">
+          <button class="accordion">Account information</button>
+          <div class="panel">
+            <div class="first-element">
+              <ul class="accordion-ul">
+                <li class="footer-li"><a href="">My Account</a></li>
+                <li class="footer-li"><a href="">Overview</a></li>
+                <li class="footer-li"><a href="">Order History</a></li>
+                <li class="footer-li"><a href="">Wishlist</a></li>
+                <li class="footer-li"><a href="">Account information</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="accordion accordion-second">Store information</button>
+          <div class="panel">
+            <div class="second-element">
+              <ul class="accordion-ul">
+                <li class="footer-li"><a href="">Store</a></li>
+                <li class="footer-li"><a href="">Security Notice</a></li>
+                <li class="footer-li"><a href="">Location & Hours</a></li>
+                <li class="footer-li"><a href="">Rentals</a></li>
+                <li class="footer-li"><a href="">Privacy Notice</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
+      </div>
+    </footer>
   </body>
 </html>
