@@ -382,7 +382,6 @@ li {
 .cards-li {
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 20px 20px 10px 10px;
-  position: relative;
 
   box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.05),
     0 2px 4px 0 rgba(28, 5, 77, 0.1);
@@ -497,4 +496,97 @@ li {
   justify-content: center;
   border-radius: 10px 10px 0 0;
   background-color: #fff;
+}
+/* 
+---------------------------FOURTH SECTION------------------------------- */
+
+.articles {
+  background-color: #fff;
+  padding: 85px 0;
+}
+
+.third-title {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-size: 40px;
+  display: inline-flex;
+  line-height: 120%;
+  text-align: center;
+  color: #505050;
+  display: flex;
+  justify-content: center;
+}
+
+.third-title::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  top: -7px;
+  height: 3px;
+  background-color: rgba(171, 4, 51, 0.8);
+}
+.articles-ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.articles-li {
+  box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.05),
+    0 2px 4px 0 rgba(28, 5, 77, 0.1);
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+  flex-basis: calc((100% - 64px) / 3);
+}
+
+.articles-li:nth-child(-n + 2) {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
+.articles-li:nth-child(odd) .articles-content-card {
+  background-color: #252525;
+  color: #fff;
+}
+
+.articles-li:nth-child(odd) .articles-content-card .card-p {
+  color: #c4c4c4;
+}
+
+.articles-content-card {
+  padding: 16px;
+  background-color: #eaeaea;
+  border-radius: 0 0 10px 10px;
+}
+
+.articles-content-card .card-p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  color: #767676;
+}
+
+.card-img-third img {
+  width: 100%;
+}
+
+@media (max-width: 1150px) {
+  .articles-li {
+    flex-basis: calc(50% - 16px);
+  }
+
+  .articles-li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .articles-li {
+    flex-basis: 100%;
+  }
+  .articles-li:nth-child(-n + 2) {
+    flex-basis: 100%;
+  }
 }
